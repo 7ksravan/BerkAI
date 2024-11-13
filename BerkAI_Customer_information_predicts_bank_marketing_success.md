@@ -44,21 +44,25 @@ eco: ecovarrate, eco: cpi, eco: confindex, eco: euribor3m
 
 ## Report
 
- 1. Data columns cyratwere curated - SIR curation - Sorting, Irrelevant column removal, Renaming
+### Data Preparation
+
+ 1. Data columns were curated - SIR curation - Sorting, Irrelevant column removal, Renaming
     
  2. Data row issues were handled - DON curation - 12 duplicates removed, some outliers removed, no nulls
     
  3. Data data special issues were handled
 
-4. Exploratory Data Analysis provided key insights to data and their interrelation.
+### Exploratory Data Analysis (EDA)
+
+4.  EDA provided key insights to data and their interrelation.
   
-   Below is a 2D PCA of the 2 classes Client Response Yes, Client Response No.
-   
-   With a PCA preserved variance of just 67%, it is intuitive that there is clear class separation in 2D PCA
+   For example, below is a 2D PCA of the 2 classes Client Response Yes, Client Response No. With a PCA preserved variance of just 67%, it is intuitive that there is clear class separation in 2D PCA
 
   ![image](https://github.com/7ksravan/BerkAI/blob/main/images/17pca2D.png)
     
- 5. **Metrics** for this classification problem:
+### Metrics & Baselining
+
+ 5. Metrics for this classification problem:
     1. Recall
     2. Precision
     3. F1 score
@@ -73,22 +77,32 @@ Below are the Baseline Models details and scores
 
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/17baseline.png)
 
-7. Two new Economic Feature was engineered from the 5 original Economic features since there are highly correlated. Total preserved variance was 89.08%.
+### Feature Engineering
 
-8. Models for this Assignment:
+7. Two new Economic Feature was engineered from the 5 original Economic features since there are highly correlated. Total preserved variance was 89.08%
+   
+8. No Feature selection was carried out although Chi Square statistical analysis was performed
+   
+9. Feature Scaling was done: numerical features via MinMax Scaler & categorical features via Ordinal Encoder
+
+### Model Engineering
+
+10. Models for this Assignment:
 
     1. Logistic Regression
     2. K Nearest Neighbors
     3. Decision Tree
     4. Support Vector Machine Classifier
 
-9. Best Parameters were found out for the models by running GridSearch. Refer to Jupyter Notebook for details
+11. Best Parameters were found out for the models by running GridSearch. Refer to Jupyter Notebook for details
+
+### Evaluation & Results Discussion
     
-10. A final evaluation was run for all the models with best parameters
+12. A final evaluation was run for all the models with best parameters
    
  ![image](https://github.com/7ksravan/BerkAI/blob/main/images/17evalscorestable.png)
 
-11. Classifier Models: Scoring Comparison
+13. Classifier Models: Scoring Comparison
 
   1. Decision Tree is the best performing model with the highest scoring in precision, recall and F1 score
   2. Logistics Regression is a close second with the highest Test accuracy but behind Decision Tree in precision, recall and F1 score
@@ -97,13 +111,13 @@ Below are the Baseline Models details and scores
      
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/17score.png)
     
-13. Classifier Models: performance comparison
+14. Classifier Models: performance comparison
 
 SVC is the most time consuming and computationally expensive of all models as demonstrated below. It took ~25 minutes to run 2 iterations of SVC. While all other models ran ~16-20 iterations in least than 2 minutes. Part of the bad score of the SVC is probably because I could not perform finetuning.
 
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/17runtime.png)
 
-14. Feature Importance
+15. Feature Importance
 
 Feature Importance was arrived by ranking features by:
     * Chi Square statistical score 
@@ -119,11 +133,11 @@ Customers information like job info, housing & loan status and age see to be mor
 
 The second tier of features that seem to be important are the marketing features like time, mode and frequency of communication. Interestingly the month of the year seems to have an important bearing on the prediction. If the chances of success are high in particular months, it might be a good strategy to cyclically focus more on Term Deposit marketing in a particular periods of the year while focussing on other products during the other periods of the year.
     
-15. Lessons Learnt: Dimensionality Reduction
+15. **Lessons Learnt**: Dimensionality Reduction
 
  I did a quick evaluation and I can confirm there is no difference in scores between the running the models with the original 5 economic features and with the 2 PCA features arrived by merging those features. This makes intutive sense since the PCA information retention is ~90%. While this specific problem set was not too big and contained only 21 features, this should a helpful pointer to leverage Dimensionality reduction in future on datasets with huge number of features
     
-16. Future Work
+16. **Future Work**
   1. Do further deep dive into features that were deemed as important in this exercise
   2. Perform further EDA & Feature engineering on Marketing Campaign features
   3. Outlier removal resulted in loss of number of records with 'No' Client Response, which was already an underrepresented class. Future work can evaluate other ways of handling outliers
