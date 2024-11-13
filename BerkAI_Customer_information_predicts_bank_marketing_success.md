@@ -123,9 +123,10 @@ SVC is the most time consuming and computationally expensive of all models as de
 15. **Feature Importance**
 
 Feature Importance was arrived by ranking features by:
-    * Chi Square statistical score 
-    * Logistic Regression coefficient
-    * Decision tree feature importance
+
+   1. Chi Square statistical score 
+   2. Logistic Regression coefficient
+   3. Decision tree feature importance
 
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/17featimp.png)
 
@@ -134,13 +135,14 @@ I calculated the cumulative **weighted ranking** of all the ranking to get insig
 Interestingly the customer profile ends up being the most important predictor of the Marketing Campaign success.
 Customers information like job info, housing & loan status and age see to be more telling of the chances of them making a Term Deposit than even the marketing campaign and prevailing economic situation. This is intuitive if we think of assume the marketing campaign is already fairly standardized and optimized
 
-The second tier of features that seem to be important are the marketing features like time, mode and frequency of communication. Interestingly the month of the year seems to have an important bearing on the prediction. If the chances of success are high in particular months, it might be a good strategy to cyclically focus more on Term Deposit marketing in a particular periods of the year while focussing on other products during the other periods of the year.
+The second tier of features that seem to be important are the marketing features like time, mode and frequency of communication. Interestingly the month of the year seems to have an important bearing on the prediction. If the chances of success are high in particular months, it might be a good strategy to cyclically focus more on Term Deposit marketing in a particular period of the year while focussing on other products during the other periods of the year.
     
-15. **Lessons Learnt**: Dimensionality Reduction
+15. **Lessons Learnt:** Dimensionality Reduction
 
  I did a quick evaluation and I can confirm there is no difference in scores between the running the models with the original 5 economic features and with the 2 PCA features arrived by merging those features. This makes intutive sense since the PCA information retention is ~90%. While this specific problem set was not too big and contained only 21 features, this should a helpful pointer to leverage Dimensionality reduction in future on datasets with huge number of features
     
 16. **Future Work**
-  1. Do further deep dive into features that were deemed as important in this exercise
-  2. Perform further EDA & Feature engineering on Marketing Campaign features
-  3. Outlier removal resulted in loss of number of records with 'No' Client Response, which was already an underrepresented class. Future work can evaluate other ways of handling outliers
+    
+     1. Do further deep dive into features that were deemed as important in this exercise
+     2. Perform further EDA & Feature engineering on Marketing Campaign features
+     3. Outlier removal resulted in loss of number of records with 'No' Client Response, which was already an underrepresented class. Future work can evaluate other ways of handling outliers
