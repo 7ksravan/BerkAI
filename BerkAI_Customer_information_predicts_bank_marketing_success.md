@@ -1,9 +1,12 @@
 # Customer information predicts bank marketing success
 
+![image](https://github.com/7ksravan/BerkAI/blob/main/images/17%20term%20deposit.jpg)
+
 ## Summary
 Bank Marketing data for getting clients to make Long Term Deposits reveals customer information is crucial (than even marketing campaign and prevailing economic environment) to achieving higher rates of positive response to marketing campaign.
 
-![image](https://github.com/7ksravan/BerkAI/blob/main/images/17%20term%20deposit.jpg)
+## Links
+[Jupyter Notebook](https://github.com/7ksravan/BerkAI/blob/main/BerkAI_Customer_information_predicts_bank_marketing_success.ipynb)
 
 ## Overview
 
@@ -104,10 +107,10 @@ Below are the Baseline Models details and scores
 
 13. Classifier Models: Scoring Comparison
 
-  1. Decision Tree is the best performing model with the highest scoring in precision, recall and F1 score
-  2. Logistics Regression is a close second with the highest Test accuracy but behind Decision Tree in precision, recall and F1 score
-  3. KNN performed reasonably well but fell behind in recall score that dragged down the F1 score too
-  4. SVC score is not good and much below the baseline score
+     1. Decision Tree is the best performing model with the highest scoring in precision, recall and F1 score
+     2. Logistics Regression is a close second with the highest Test accuracy but behind Decision Tree in precision, recall and F1 score
+     3. KNN performed reasonably well but fell behind in recall score that dragged down the F1 score too
+     4. SVC score is not good and much below the baseline score
      
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/17score.png)
     
@@ -117,7 +120,7 @@ SVC is the most time consuming and computationally expensive of all models as de
 
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/17runtime.png)
 
-15. Feature Importance
+15. **Feature Importance**
 
 Feature Importance was arrived by ranking features by:
     * Chi Square statistical score 
