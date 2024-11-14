@@ -40,6 +40,7 @@ Get pricing insights for used cars to determine procurement pricing and strategy
 ### To the client
 8. Based on Random Forest feature importance Year, Odometer, Manufacturer and Cylinder turned out to be the most significant features
 9. The client is asked to present any further data associated with the used cars that might be helpful in better modeling
+10. Below are the features importance ranking for the client's reference
 
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/11featimp.png)
 
