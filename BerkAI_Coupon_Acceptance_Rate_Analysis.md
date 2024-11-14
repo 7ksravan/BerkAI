@@ -33,13 +33,13 @@ The data is from a survey conducted via Amazon Mechanical Turk to evaluated driv
 
  9. Occupation seems to be a big predictor of coupon acceptance. People from specific occupation accept coupons much more than others
 
-Below are the value types with highest coupon acceptance
+**value types with highest coupon acceptance**
 
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/5accrateall.png)
     
  10. Further deep diving of carry out coupon data reveals 100% acceptance among people from Building & Grounds Cleaning & Maintenance occupation. There is almost 100% acceptance among certain occupations for carry out coupons
 
-Below are the value types with highest CARRYOUT coupon acceptance
+**value types with highest CARRYOUT coupon acceptance**
 
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/5accratecarryout.png)
 
