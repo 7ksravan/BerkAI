@@ -5,7 +5,7 @@
 Deep Dive of customer coupon data reveals highest coupon acceptance among specific occupation times and when the coupon give is for a carry-out or cheaper restaurant
 
 ## Links
-[Jupyter Notebook contained detailed work](https://github.com/7ksravan/BerkAI/blob/main/BerkAI_Coupon_Acceptance_Rate_Analysis.ipynb)
+[Jupyter Notebook](https://github.com/7ksravan/BerkAI/blob/main/BerkAI_Coupon_Acceptance_Rate_Analysis.ipynb)
 
 ## Overview & Data
 
