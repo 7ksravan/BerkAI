@@ -15,7 +15,7 @@ The data is from a survey conducted via Amazon Mechanical Turk to evaluated driv
 
  1. Overall coupon acceptance rate was 57%
     
- 2. For coupons provided for Bars, acceptance rate was 41%.
+ 2. For coupons provided for Bars, acceptance rate was 41%
     
  3. For coupons provided for Bars, there is a huge difference in acceptance rates among Bar frequenters (76%) and people who visit Bar less frequently (37%)
     
@@ -45,5 +45,5 @@ Below are the value types with highest CARRYOUT coupon acceptance
 
 ## Future Work:
 
-1. Accessing granular data behind this dataset for further analysis (ex: some data is in bins. it would be interesting to look at the actual numbers).
+1. Accessing granular data behind this dataset for further analysis (ex: some data is in bins. it would be interesting to look at the actual numbers)
 2. Classification and clustering analysis of this data
