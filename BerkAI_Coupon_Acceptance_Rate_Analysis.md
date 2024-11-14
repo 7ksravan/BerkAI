@@ -1,5 +1,5 @@
 # Coupon Acceptance Rate Analysis
-![image(https://github.com/7ksravan/BerkAI/blob/main/images/5carryout.png)
+![image](https://github.com/7ksravan/BerkAI/blob/main/images/5carryout.png)
 
 ## Summary
 Deep Dive of customer coupon data reveals highest coupon acceptance among specific occupation times and when the coupon give is for a carry-out or cheaper restaurant
@@ -29,7 +29,7 @@ The data is from a survey conducted via Amazon Mechanical Turk to evaluated driv
     
  8. Deep dive analysis reveals highest acceptance rates for coupons given to carry outs and cheaper restaurants
     
-![image]https://github.com/7ksravan/BerkAI/blob/main/images/5coupontype.png
+![image](https://github.com/7ksravan/BerkAI/blob/main/images/5coupontype.png)
 
  9. Occupation seems to be a big predictor of coupon acceptance. People from specific occupation accept coupons much more than others
 
