@@ -6,13 +6,7 @@
 [Jupyter Notebook](https://github.com/7ksravan/BerkAI/blob/main/BerkAI_Customer_information_predicts_bank_marketing_success.ipynb)
 
 ## Summary
-Spectacularly interesting results emerge after complex feature engineering the features of Used Car Prices dataset.
-
-Modeling with the newly engineered features demonstrate 20% reduction in RMSE error compared to modeling with the original features in the dataset. There is a remarkable ~50% reduction in Random Forest RMSE error. Linear Regression Model's RMSE error, training and test accuracy all show an ~30% improvement. Random Forest Test Accuracy shot up to 90%
-
-What also standsout is the fact that a whole different set of features emerge as the most important ones driving price prediction. Engineered Features like State Purchasing Parity (externally sourced) & Model numerical value stole the show.
-
-Quite some interesting work went into applying extracting information from 'messy' model feature with NLP and in referencing external data for numerical transformation of existing features.
+Spectacularly interesting results emerge after performing complex feature engineering on Used Car Prices dataset. Modeling with the newly engineered features shows an average of 20% reduction in RMSE error compared to modeling with the original features. There is a remarkable ~50% reduction in Random Forest Regressor's RMSE error. Linear Regression Model's RMSE error, training and test accuracy all show an impressive ~30% improvement. Random Forest Test Accuracy shot up to 90%! What also stands out is the fact that a whole different set of features emerge as the most important ones driving price prediction. Engineered Features like State Purchasing Parity (externally sourced) & Model numerical value stole the show compared to Odometer reading and Year of manufacturer. Quite some interesting work went into applying NLP to extract information from the 'messy' model feature. Also I referenced referencing external economic data to meaningfully use the states feature.
 
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/capplots.png)
     
@@ -92,7 +86,7 @@ Below are some of the features discussed. For the rest, please refer to the Jupy
     * cylinder numbers as text converted to number where missing imputed with mean
     * size scale: car sizes mapped to 1-5 numerical scale
    
-
+![image](https://github.com/7ksravan/BerkAI/blob/main/images/capfeatimp.png)
 
 ## Future Work:
 
