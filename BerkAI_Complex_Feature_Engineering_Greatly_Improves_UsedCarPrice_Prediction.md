@@ -3,7 +3,7 @@
 ![image](https://github.com/7ksravan/BerkAI/blob/main/images/capimage.jpg)
 
 ## Links
-[Jupyter Notebook](https://github.com/7ksravan/BerkAI/blob/main/BerkAI_Customer_information_predicts_bank_marketing_success.ipynb)
+[Jupyter Notebook](https://github.com/7ksravan/BerkAI/blob/main/BerkAI_Complex_Feature_Engineering_Greatly_Improves_UsedCarPrice_Prediction.ipynb)
 
 ## Summary
 Spectacularly interesting results emerge after performing complex feature engineering on Used Car Prices dataset. Modeling with the newly engineered features shows an average of 20% reduction in RMSE error compared to modeling with the original features. There is a remarkable ~50% reduction in Random Forest Regressor's RMSE error. Linear Regression Model's RMSE error, training and test accuracy all show an impressive ~30% improvement. Random Forest Test Accuracy shot up to 90%! What also stands out is the fact that a whole different set of features emerge as the most important ones driving price prediction. Engineered Features like State Purchasing Parity (externally sourced) & Model numerical value stole the show compared to Odometer reading and Year of manufacturer. Quite some interesting work went into applying NLP to extract information from the 'messy' model feature. Also I referenced referencing external economic data to meaningfully use the states feature.
